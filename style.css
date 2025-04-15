@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #f9f9f9;
+    color: #111;
+    scroll-behavior: smooth;
+  }
+  .hero {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  .scroll-down {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #111;
+  }
+  
+  .about {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .about-content p {
+    flex: 1;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  .about-content img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .projects {
+    padding: 4rem 2rem;
+  }
+  .projects h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .project-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover img {
+    transform: scale(1.05);
+  }
+  .project-info {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(255,255,255,0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    background: #eee;
+    margin-top: 4rem;
+  }
+  .socials a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+  }
+  
